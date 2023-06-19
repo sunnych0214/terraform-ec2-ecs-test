@@ -16,7 +16,7 @@ module "EC2" {
 
   ami = local.ec2_config.ami
   instance-type = local.ec2_config.instance_type
-  volume-size = local.ecimage.png2_config.volume_size
+  volume-size = local.ec2_config.volume_size
   volume-type = local.ec2_config.volume_type
   bastion-subnet-id = module.VPC.bastion-subnet-id
 }
